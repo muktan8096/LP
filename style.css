@@ -1,0 +1,226 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.background {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #fff5f5;
+}
+
+.index-bg {
+    background-image: url("videos/landing.png");
+}
+
+.join-bg {
+    background-image: url("videos/join.png");
+}
+
+
+.content {
+   
+    
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    
+}
+
+.content h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #6a3b00;
+}
+
+.content p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #6a3b00;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e76de3b7;
+}
+
+.why-us h3 {
+    color: #6a3b00;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+
+}
+.why-us{
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.why-us ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    text-align: left;
+    line-height: 1.4; /* reduce space between lines */
+}
+
+.why-us li {
+    font-size: 1rem;
+    margin: 4px 0;  /* shrink this from 8px or more */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.join-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 24px;
+    text-align: left;
+}
+
+.join-form input,
+.join-form select{
+    
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 12px;
+        font-size: 1rem;
+        font-family: inherit;
+        box-sizing: border-box;
+        background: url("videos/join.png") no-repeat center center;
+        background-position: right 12px center;
+        background-size: 18px;
+    }
+    
+
+.join-form textarea {
+    padding: 14px 16px;
+    font-size: 1rem;
+    border: 2px solid #e3c2a7;
+    border-radius: 14px;
+    font-family: inherit;
+    background-color: #fff9f3;
+    color: #5a2f00;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.join-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.join-form button {
+    padding: 12px;
+    background-color: #b35a07;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.back-button {
+    display: inline-block;
+    margin: 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #6a3b00;
+    background-color: #fce8e0;
+    border: 2px solid #e3c2a7;
+    padding: 8px 16px;
+    border-radius: 12px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease, color 0.3s ease;
+   
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 20;
+    }
+    
+
+
+.back-button:hover {
+    background-color: #e9d2cb;
+    color: #a64ac9;
+}
+
+
+.join-form button:hover {
+    background-color: #ed80d9;
+}
+
+@media (max-width: 600px) {
+    .content,
+    .hero-content,
+    .why-us {
+        padding: 20px;
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    h1, .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    p, .hero-content p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .why-us h2 {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+    }
+
+    .why-us ul {
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+
+    .why-us li {
+        margin: 4px 0;
+        gap: 6px;
+    }
+    
+    
+}
