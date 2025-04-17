@@ -20,11 +20,11 @@ body, html {
 }
 
 .index-bg {
-    background-image: url("videos/landing.png");
+    background-image: url("landing.png");
 }
 
 .join-bg {
-    background-image: url("videos/join.png");
+    background-image: url("join.png");
 }
 
 
